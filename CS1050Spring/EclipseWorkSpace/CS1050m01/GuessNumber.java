@@ -15,7 +15,7 @@ public class GuessNumber //Declaring the Class for the file
 		//Math.random gives a Double between 0.00 and 1.00 then multiplied it by 100
 		int number = (int) (Math.random() * RANDOM_MULTIPLIER) + 1;
 		//Calling the Class Scanner and assigning keyboardInput to the value input in the system input
-		Scanner keyboardInput = new Scanner(System.in)
+		Scanner keyboardInput = new Scanner(System.in);
 		
 		System.out.println("Guess a magic number between 0 and 100");
 		//declare integer guess assigning it to -1
