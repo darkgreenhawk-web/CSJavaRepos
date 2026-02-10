@@ -27,12 +27,14 @@ public class GEM01GradeCalculator {
 		double quizzesGrade = 88.0;
 		double projectsGrade = 87.0;
 		double finalDemonostrationGrade = 93.0;
-		//Declaring the finalGrade as a double then in running the equation to get the final grade.
+		//Declaring the finalGrade as a double
+		//Initializing fianlGrade as the result as the equation to get the finalGrade
 		double finalGrade = CLASS_PARTICIPATION_WEIGHT * classParticipationGrade +
 				GUIDED_EXPLORATION_WEIGHT * guidedExplorationGrade +
 				QUIZZES_WEIGHT * quizzesGrade +
 				PROJECTS_WEIGHT * projectsGrade +
 				FINAL_DEMONOSTRATION_WEIGHT * finalDemonostrationGrade;
+		//Output statement to the console printing text and the finalGrade
 		System.out.println ("Total Final Grade for Andrew Rusch " + finalGrade);
 		
 	}

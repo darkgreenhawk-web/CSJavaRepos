@@ -2,12 +2,16 @@
  * This program takes user input to see if they can guess the 
  * random number generated. Add comments to explain the code.
  */
-
+//Import is a keyword used to make 
 import java.util.Scanner; // Import Scanner class for keyboard input
-
-public class RuschAndrewGuessNumber //Declaring the Class for the file
+//public class is a keyword
+//Declaring the Class for the code in this file 
+public class RuschAndrewGuessNumber 
 {
-	public static void main(String[] args) // Main method where the program starts
+	//Public static void are keywords
+	//main is the main method
+	//string[] args is a identifier and data type
+	public static void main(String[] args) 
 	{		
 		//Declare a Constant integer "RANDOM_MULTIPLER" then assigning it to 100
 		final int RANDOM_MULTIPLIER = 100;
@@ -33,20 +37,24 @@ public class RuschAndrewGuessNumber //Declaring the Class for the file
 		//this loop will keep running till the guess and random number are equal.
 		while (guess != number)
 		{
+			//System is a class
+			//out and print are methods
 			//Output statement to the console
 			//Prompt to user to input a number
 			System.out.print("\nEnter your guess: ");
-			//assign guess to the input given by keyboardInput
+			//assign guess to the input given by keyboardInput in the console
 			guess = keyboardInput.nextInt();
-			//Conditional statement
+			//Conditional statement == is when terms are the same
 			if (guess == number) 
 			{
 				System.out.println("Yes, the number is " + number);
 			}
+			//else if is the next step 
 			else if (guess > number)
 			{
 				System.out.println("Your guess is too high");
 			}
+			//Is the line of code that triggers when the if statements above do not.
 			else
 			{
 				System.out.println("Your guess is too low");
