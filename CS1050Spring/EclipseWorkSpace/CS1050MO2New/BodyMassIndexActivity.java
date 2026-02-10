@@ -18,9 +18,9 @@ public class BodyMassIndexActivity
 		final int BMI_US_FACTOR = 703;
 		// Variables
 		// The user's weight
-		double userWeight = -1;
+		double userWeight;
 		// The user's height
-		double userHeight = -1;
+		double userHeight;
 		// The user's BMI
 		double userBMI;
 		

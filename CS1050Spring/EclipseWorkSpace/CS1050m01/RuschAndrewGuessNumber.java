@@ -38,7 +38,7 @@ public class RuschAndrewGuessNumber //Declaring the Class for the file
 			System.out.print("\nEnter your guess: ");
 			//assign guess to the input given by keyboardInput
 			guess = keyboardInput.nextInt();
-			//Condiitonal statement
+			//Conditional statement
 			if (guess == number) 
 			{
 				System.out.println("Yes, the number is " + number);
