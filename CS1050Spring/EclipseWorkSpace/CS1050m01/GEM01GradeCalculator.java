@@ -24,9 +24,9 @@ public class GEM01GradeCalculator {
 		//Declaring the variable doubles for the grade of each category. 
 		double classParticipationGrade = 95.0;
 		double guidedExplorationGrade = 92.0;
-		double quizzesGrade = 88.0;
+		double quizzesGrade = 08.0;
 		double projectsGrade = 87.0;
-		double finalDemonostrationGrade = 93.0;
+		double finalDemonostrationGrade = 03.0;
 		//Declaring the finalGrade as a double
 		//Initializing fianlGrade as the result as the equation to get the finalGrade
 		double finalGrade = CLASS_PARTICIPATION_WEIGHT * classParticipationGrade +
@@ -35,8 +35,29 @@ public class GEM01GradeCalculator {
 				PROJECTS_WEIGHT * projectsGrade +
 				FINAL_DEMONOSTRATION_WEIGHT * finalDemonostrationGrade;
 		//Output statement to the console printing text and the finalGrade
-		System.out.println ("Total Final Grade for Andrew Rusch " + finalGrade);
+		System.out.println("Total Final Grade for Andrew Rusch " + finalGrade);
 		
+		//if grade
+		if (finalGrade >=90)
+			{
+			System.out.println("You got an A");
+			}		
+		else if (finalGrade >= 80) 
+			{
+			System.out.println("You got a B");
+			}
+		else if (finalGrade >= 70) 
+			{
+			System.out.println("You got a C");
+			}
+		else if (finalGrade >= 60) 
+			{
+			System.out.println("You got a D");
+			}
+		else 
+			{				
+			System.out.println("You got a F :(");	
+			}		
 	}
 
 }
