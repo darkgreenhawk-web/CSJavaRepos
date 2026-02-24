@@ -2,7 +2,6 @@
  * Calculate the BMI using formula in US units. 
  * User will enter weight in pounds and height in inches
  */
-
 // ADD CODE to import Scanner class
 import java.util.Scanner;
 
@@ -24,10 +23,12 @@ public class BodyMassIndexActivity
 		// The user's BMI
 		double userBMI;
 		
+		String catagory;
+		
 		// Create a Scanner object for scanning input from keyboard
 		Scanner keyboardInput = new Scanner(System.in);
 		// Tell the user what the program will do.
-		System.out.println("This program will calculate your " + "body mass index, or BMI.");
+		System.out.println("This program will calculate your body mass index, or BMI.");
 
 		// Get the user's weight.
 		System.out.print("Enter your weight, in pounds: ");
@@ -35,13 +36,32 @@ public class BodyMassIndexActivity
 		userWeight = keyboardInput.nextDouble();
 		// Get the user's height.
 		System.out.print("Enter your height, in inches: ");
-		// ADD CODE input next double for height
+		// input next double for height
 		userHeight = keyboardInput.nextDouble();
 		// Calculate the user's body mass index.
 		userBMI = userWeight * BMI_US_FACTOR / (userHeight * userHeight);
 
 		// Display the user's BMI.
-		System.out.printf("Your body mass index (BMI) is %f", userBMI);
-
+		System.out.println("Weight " + userWeight + "	Height " + userHeight);
+		System.out.printf("Your body mass index (BMI) is %f", userBMI + "\n");
+		System.out.println();
+		if (userBMI >= 30.0)
+		{
+			catagory = "Obese";
+		}
+		else if (userBMI >= 25)
+		{
+			catagory = "OverWeight";
+		}
+		else if (userBMI >= 18.5)
+		{
+			catagory = "Normal";
+		}
+		else
+		{
+			catagory = "Underweight";
+		}
+		System.out.println("Your catagory is: " + catagory);
 	}
 }
+

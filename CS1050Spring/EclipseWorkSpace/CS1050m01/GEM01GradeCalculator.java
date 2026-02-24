@@ -8,6 +8,9 @@
 /**
  * 
  */
+//
+import java.util.Scanner;
+
 public class GEM01GradeCalculator {
 
 	/**
@@ -15,6 +18,7 @@ public class GEM01GradeCalculator {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner keyboardInput = new Scanner(System.in);
 		//Declaring a CONSTANT doubles for weight of each category.
 		final double CLASS_PARTICIPATION_WEIGHT = 0.15; 
 		final double GUIDED_EXPLORATION_WEIGHT = 0.20;
@@ -27,6 +31,24 @@ public class GEM01GradeCalculator {
 		double quizzesGrade = 08.0;
 		double projectsGrade = 87.0;
 		double finalDemonostrationGrade = 03.0;
+		//Declaring the strings for students first and last name.
+		char studentFirstNameLetter;
+		char studentLastNameLetter;
+		//User inputs
+		System.out.println("First name");
+		studentFirstNameLetter = keyboardInput.next().charAt(0);
+		System.out.println("Last name");
+		studentLastNameLetter = keyboardInput.next().charAt(0);
+		System.out.println("Class Participation Grade");
+		classParticipationGrade = keyboardInput.nextDouble();
+		System.out.println("Guided Exploration Grade");
+		guidedExplorationGrade = keyboardInput.nextDouble();
+		System.out.println("Quizzes Grade");
+		quizzesGrade = keyboardInput.nextDouble();
+		System.out.println("Project Grade");
+		projectsGrade = keyboardInput.nextDouble();
+		System.out.println("Final Demonostration");
+		finalDemonostrationGrade = keyboardInput.nextDouble();
 		//Declaring the finalGrade as a double
 		//Initializing fianlGrade as the result as the equation to get the finalGrade
 		double finalGrade = CLASS_PARTICIPATION_WEIGHT * classParticipationGrade +
@@ -35,7 +57,7 @@ public class GEM01GradeCalculator {
 				PROJECTS_WEIGHT * projectsGrade +
 				FINAL_DEMONOSTRATION_WEIGHT * finalDemonostrationGrade;
 		//Output statement to the console printing text and the finalGrade
-		System.out.println("Total Final Grade for Andrew Rusch " + finalGrade);
+		System.out.println("Total Final Grade for " + studentFirstNameLetter + " " + studentLastNameLetter + " " + finalGrade);
 		
 		//if grade
 		if (finalGrade >=90)
@@ -58,6 +80,7 @@ public class GEM01GradeCalculator {
 			{				
 			System.out.println("You got a F :(");	
 			}		
+		keyboardInput.close();
 	}
 
 }

@@ -14,19 +14,21 @@ public class Madlib {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	Scanner keyboardInput = new Scanner(System.in);
+	//strings are a 
 	String firstName;
 	String lastName;
 	String noun;
 	String adjective;
 	String verbWithIng;
 	String place;
+	//char data type is a single character is a simple data type only storing a single point of data
 	char favoriteLetter;
-	char firstLetterName;
+	char firstLetterLastName;
 	
 	System.out.println("First name");
 	firstName = keyboardInput.next();
 	System.out.println("Last Name");
-	firstLetterName = keyboardInput.next().charAt(0);
+	firstLetterLastName = keyboardInput.next().charAt(0);
 	System.out.println("Noun");
 	noun = keyboardInput.next();
 	System.out.println("adjective");
@@ -40,7 +42,7 @@ public class Madlib {
 	
 	
 	
-	System.out.println("Once upon a time, " + firstName +  " " + firstLetterName +
+	System.out.println("Once upon a time, " + firstName +  " " + firstLetterLastName +
 	" was " + verbWithIng + " through the " +
 	place +" with a " + noun + ". It was a very " + 
 	adjective + " day. Their favorite letter was " + favoriteLetter + " .");
