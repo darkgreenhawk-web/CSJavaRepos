@@ -42,9 +42,8 @@ public class BodyMassIndexActivity
 		userBMI = userWeight * BMI_US_FACTOR / (userHeight * userHeight);
 
 		// Display the user's BMI.
-		System.out.println("Weight " + userWeight + "	Height " + userHeight);
-		System.out.printf("Your body mass index (BMI) is %f", userBMI + "\n");
-		System.out.println();
+		System.out.println("Weight " + userWeight + "\tHeight " + userHeight);
+		System.out.printf("Your body mass index (BMI) is %f", userBMI);
 		if (userBMI >= 30.0)
 		{
 			catagory = "Obese";
@@ -61,7 +60,7 @@ public class BodyMassIndexActivity
 		{
 			catagory = "Underweight";
 		}
-		System.out.println("Your catagory is: " + catagory);
+		System.out.println("\nour catagory is: " + catagory);
 	}
 }
 
