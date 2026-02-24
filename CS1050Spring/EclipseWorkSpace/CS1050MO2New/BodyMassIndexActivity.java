@@ -60,7 +60,8 @@ public class BodyMassIndexActivity
 		{
 			catagory = "Underweight";
 		}
-		System.out.println("\nour catagory is: " + catagory);
+		System.out.println("\nYour catagory is: " + catagory);
+		keyboardInput.close();
 	}
 }
 

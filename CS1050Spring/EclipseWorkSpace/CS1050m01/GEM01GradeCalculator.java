@@ -32,13 +32,16 @@ public class GEM01GradeCalculator {
 		double projectsGrade = 87.0;
 		double finalDemonostrationGrade = 03.0;
 		//Declaring the strings for students first and last name.
-		char studentFirstNameLetter;
-		char studentLastNameLetter;
+		String firstName;
+		String lastName;
+		char firstIntital;
+		char lastinital;
+		
 		//User inputs
 		System.out.println("First name");
-		studentFirstNameLetter = keyboardInput.next().charAt(0);
+		firstName = keyboardInput.next();
 		System.out.println("Last name");
-		studentLastNameLetter = keyboardInput.next().charAt(0);
+		lastName = keyboardInput.next();
 		System.out.println("Class Participation Grade");
 		classParticipationGrade = keyboardInput.nextDouble();
 		System.out.println("Guided Exploration Grade");
@@ -57,7 +60,8 @@ public class GEM01GradeCalculator {
 				PROJECTS_WEIGHT * projectsGrade +
 				FINAL_DEMONOSTRATION_WEIGHT * finalDemonostrationGrade;
 		//Output statement to the console printing text and the finalGrade
-		System.out.println("Total Final Grade for " + studentFirstNameLetter + " " + studentLastNameLetter + " " + finalGrade);
+		firstInital = char(0)
+		System.out.println("Total Final Grade for " + firstName + " " + lastName + " " + finalGrade);
 		
 		//if grade
 		if (finalGrade >=90)
