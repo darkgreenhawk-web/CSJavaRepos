@@ -31,7 +31,7 @@ public class PostiveNumber {
 		{
 			base *= base;
 		}
-		System.out.println("Results of base: " + base);
+		System.out.println("Results of base and exponent: " + base);
 			
 		keyboardInput.close();
 	}

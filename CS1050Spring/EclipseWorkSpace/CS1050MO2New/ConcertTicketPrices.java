@@ -23,7 +23,7 @@ public class ConcertTicketPrices {
 		sectLetter = keyboardInput.next().charAt(0);
 		//make sure the first letter is capitalized
 		sectLetter = Character.toUpperCase(sectLetter);
-		
+		//Switch statement
 		switch (sectLetter){
 			case 'F':
 				section = "Front.";
@@ -42,27 +42,30 @@ public class ConcertTicketPrices {
 				break;
 		}
 		System.out.println("You selected section " + section);
-		//if statement to grab 
+		//if statement to verify that the section is Valid 
 		if (section != "invalid Section") 
 			{
 			System.out.println("What Rows 1-15 Cost $450 Rows 16-30 Cost $300 Rows 31-60 Cost $200");
 			//grab a integer from the user input
 			row = keyboardInput.nextInt();
-			//
+			//if checking if rows 1-60
 			if (row >= 1 && row <= 60)
 				{
+				//checking first 15 rows
 				if (row <= 15)
 					{
 					cost = 450;
 					}
+				//checking 16 to 30
 				else if (row <= 30)
 					{
 					cost = 300;
 					}
+				//the left over of 31 to 60
 				else
 					{
 					cost = 200;
-					}
+					} 
 				System.out.println("Your Row is " + row);
 				System.out.println("Section " + section + " Row " + row + ".");
 				System.out.println("Ticket " + sectLetter + row + " Cost $" + cost);
@@ -73,7 +76,7 @@ public class ConcertTicketPrices {
 			System.out.println("Invalid Row: Exiting program.");
 				}
 			}
-		//Else for invalid section 
+		//else for invalid section 
 		else 
 			{
 			System.out.println("Invalid Section: Exiting program.");

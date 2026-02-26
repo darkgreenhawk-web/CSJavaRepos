@@ -22,7 +22,6 @@ public class BodyMassIndexActivity
 		double userHeight;
 		// The user's BMI
 		double userBMI;
-		
 		String catagory;
 		
 		// Create a Scanner object for scanning input from keyboard
