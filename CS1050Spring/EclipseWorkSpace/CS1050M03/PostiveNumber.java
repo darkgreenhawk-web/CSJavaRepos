@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 /**
- * 
+ * new comment
  */
 public class PostiveNumber {
 

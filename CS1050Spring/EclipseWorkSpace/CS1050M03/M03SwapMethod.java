@@ -25,6 +25,7 @@ public class M03SwapMethod
 		System.out.println ("num2 = " + num2);
 		
 		
+
 		System.out.println("\nPart 2: get positive number and pass object");
 		int number = 0; 
 		int sum = 0; 
