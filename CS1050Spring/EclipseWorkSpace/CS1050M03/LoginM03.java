@@ -18,8 +18,8 @@ public class LoginM03 {
 		String inputUsername;
 		String inputPassword;
 		Scanner keyboardInput = new Scanner(System.in);
-		boolean correct = false;
-		while (tries < 3 && correct == false)
+		boolean logedIn = false;
+		while (tries < 3 && !logedIn)
 		{
 			System.out.print("Enter Username ");
 			inputUsername = keyboardInput.next();
@@ -29,7 +29,7 @@ public class LoginM03 {
 				inputPassword = keyboardInput.next();
 				if (password.equals(inputPassword)) {
 					System.out.println("\nCorrect Password");
-					correct = true;
+					logedIn = true;
 				}
 				else {
 					System.out.println("\nIncorrect Password");
@@ -41,7 +41,7 @@ public class LoginM03 {
 				tries++;
 			}
 		}
-		if (correct == true)
+		if (logedIn == true)
 		{
 			System.out.println("\nLogin successful");
 		}
