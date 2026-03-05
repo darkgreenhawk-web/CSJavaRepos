@@ -49,6 +49,9 @@ public class LoginM03 {
 		{
 			System.out.println("Timeout.");
 		}
+	keyboardInput.close();
+	
 	}
+	
 
 }
