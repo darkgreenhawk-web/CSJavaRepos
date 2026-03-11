@@ -14,8 +14,8 @@ public class AthleteTracker {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		boolean continue = true;
-		while(continue == true) {
+		boolean keepGoing = true;
+		while(keepGoing == true) {
 			double currentHeight = getPositiveDouble(input,"Height");
 			double currentWeight = getPositiveDouble(input,"Weight");
 			double currentBMI;
@@ -24,7 +24,7 @@ public class AthleteTracker {
 			String catagory = getBMICategory(currentBMI);
 			System.out.println(currentBMI);
 			System.out.println(catagory);
-	
+			keepGoing = AskToContinue(input);
 		}
 		input.close();
 	}	//main
@@ -82,20 +82,23 @@ public class AthleteTracker {
 		char letter;
 		boolean test = false;
 		boolean yesNo = false;
-		while(test == false)
+		while(test == false) {
 			System.out.println("Would you like to continue (Y/N)");
 			letter = methodInput.next().charAt(0);
 			if(letter == 'y' || letter == 'Y') {
 				System.out.println("Continuing.");
 				yesNo = true;
+				test = true;
 			}
 			else if(letter == 'n' || letter == 'N') {
 				System.out.println("Stopping");
 				yesNo = false;
+				test = true;
 			}
 			else {
 				System.out.println("Please enter a valid response (Y/N).");
 			}
+		}
 		return yesNo;
 	}
 }
