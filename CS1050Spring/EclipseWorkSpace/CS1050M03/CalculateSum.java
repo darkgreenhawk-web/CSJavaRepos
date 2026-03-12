@@ -15,11 +15,14 @@ public class CalculateSum {
 		
 		Scanner input = new Scanner(System.in);
 		
-		int max;
+		//int max;
 		int sum;
-		max = input.nextInt();
-		sum = calculateSum(max);
-		System.out.println("Sum is " + sum + " Max is " + max);
+	//	max = input.nextInt();
+		System.out.println("Input max iterations to sum.");
+		sum = calculateSum(input.nextInt());
+		//sum = calculateSum(max);
+		System.out.println("Sum is " + sum);
+		input.close();
 	}
 	public static int calculateSum(int max) {
 		int sum = 0;
