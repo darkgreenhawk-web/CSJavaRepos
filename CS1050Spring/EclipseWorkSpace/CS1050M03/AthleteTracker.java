@@ -13,28 +13,31 @@ public class AthleteTracker {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		printSummary();
 		Scanner input = new Scanner(System.in);
 		boolean keepGoing = true;
 		while(keepGoing == true) {
-			double currentHeight = getPositiveDouble(input,"Height");
-			double currentWeight = getPositiveDouble(input,"Weight");
+			double currentHeight = getPositiveDouble(input,"Height (inches):");
+			double currentWeight = getPositiveDouble(input,"Weight (pounds):");
 			double currentBMI;
 			final double BMI_US_FACTOR = 703;
 			currentBMI = calculateBMI(currentHeight, currentWeight, BMI_US_FACTOR);
 			String catagory = getBMICategory(currentBMI);
-			System.out.println(currentBMI);
-			System.out.println(catagory);
+			System.out.println("Current Athletes BMI: " + currentBMI + "\nCurrent Athletes Catagory: " + catagory);
+			
 			keepGoing = AskToContinue(input);
 		}
 		input.close();
 	}	//main
 	
 	
-	public static double calculateBMI(double numberH, double numberW, double US_FACTOR) 	{
+	public static double calculateBMI(double numberHeight, double numberWeight, double US_FACTOR) 	{
 		 
 		double result;
 	
-		result = numberH * US_FACTOR / (numberH * numberH);
+		result = numberWeight * US_FACTOR / (numberHeight * numberHeight);
+	
+		//System.out.println(result);
 		return result;
 	}	//calulateBMI
 	
@@ -75,9 +78,7 @@ public class AthleteTracker {
 		System.out.println("\nYour catagory is: " + catagory);
 		return catagory;
 	}
-	public static void printSummary() {
-		System.out.println("Current Athlete's height is ");
-	}
+	
 	public static boolean AskToContinue(Scanner methodInput) {
 		char letter;
 		boolean test = false;
@@ -101,4 +102,14 @@ public class AthleteTracker {
 		}
 		return yesNo;
 	}
+	public static void printSummary() {
+		System.out.println ("Team and Athlete Analysis"
+		+"\ntrainer enters athlete data until they indicate they are done entering data. The trainer will enter each athlete’s weight and height"
+		+"\neach athlete entered, the BMI value and category will be displayed based on these BMI ranges."
+		+"\n18.5: Underweight"
+		+"\n18.5 to under 25: Normal"
+		+"\n25 to under 30: Overweight"
+		+"\n30 or greater: Obese.");
+	}
 }
+
