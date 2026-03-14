@@ -30,7 +30,9 @@ public class AthleteTracker {
 		input.close();
 	}	//main
 	
-	
+	//calculate the BMI parameters height weight and us_factor 
+	//numberWeight * US_FACTOR / (numberHeight * numberHeight)
+	//returns result
 	public static double calculateBMI(double numberHeight, double numberWeight, double US_FACTOR) 	{
 		 
 		double result;
@@ -41,6 +43,8 @@ public class AthleteTracker {
 		return result;
 	}	//calulateBMI
 	
+	//request for a input for a given prompt param(scannerinput and prompt topic 
+	//validates that given input is a number and is positive
 	public static double getPositiveDouble(Scanner methodInput, String questionPrompt)	{
 		double result = 0.0;
 		boolean test = false;
@@ -65,6 +69,8 @@ public class AthleteTracker {
 		}
 		return result;
 	}
+	
+	//gives a category to input BMI
 	public static String getBMICategory (double currentBMI) {
 		String catagory;
 		if (currentBMI >= 30.0)
@@ -86,7 +92,7 @@ public class AthleteTracker {
 		System.out.println("\nYour catagory is: " + catagory);
 		return catagory;
 	}
-	
+	//asks to continue no validation here could be improved
 	public static boolean AskToContinue(Scanner methodInput) {
 		char letter;
 		boolean test = false;
