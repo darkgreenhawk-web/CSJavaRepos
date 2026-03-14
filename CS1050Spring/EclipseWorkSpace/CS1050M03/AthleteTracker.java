@@ -44,16 +44,24 @@ public class AthleteTracker {
 	public static double getPositiveDouble(Scanner methodInput, String questionPrompt)	{
 		double result = 0.0;
 		boolean test = false;
-		while(test == false) {
-			System.out.println("Please enter a " + questionPrompt);
-			result = methodInput.nextDouble();
-			if (result > 0) {
-				System.out.println("Entered height is " + result);
-				test = true;
-			}
-			else {
-				System.out.println("Invalid " + questionPrompt + ". Must be a positive number.");
-			}
+		while (!test) {
+		    System.out.println("Please enter a " + questionPrompt);
+
+		    if (methodInput.hasNextDouble()) {
+		        result = methodInput.nextDouble();
+		        
+		        if (result > 0) {
+		            System.out.println("Entered " + questionPrompt + " is " + result);
+		            test = true;
+		        } else {
+		            // when inputs a number but it's 0 or negative
+		            System.out.println("Error: Value must be positive.");
+		        }
+		    } else {
+		    	//when input is not a number
+		        System.out.println("Error: Please enter a valid numeric value.");
+		        methodInput.next(); // Clear the invalid string from the buffer
+		    }
 		}
 		return result;
 	}
