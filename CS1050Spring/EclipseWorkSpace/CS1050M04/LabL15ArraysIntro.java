@@ -18,22 +18,8 @@ public class LabL15ArraysIntro {
 		double[] studentGrades = new double[numberStudents]; // Create array for grades
 		String[] studentNames = new String[numberStudents]; // Create array for names
 		
-		for (int i = 0; i < n; i++) {
-		      numbers[i] = input.nextDouble();
-		      sum += numbers[i];
-		    }
-		    
-		    double average = sum / n;
-
-		    int count = 0; // The numbers of elements above average
-		    for (int i = 0; i < n; i++)
-		    {
-		        // Count if number[i] > average
-		         if (numbers[i] > average) 
-		        {
-		               count++;
-		         }
-		    }
+		
+		
 	}
 
 }
