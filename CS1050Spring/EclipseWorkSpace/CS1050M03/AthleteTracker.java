@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 /**
- *
+ *Add better commenting to programs
  */
 public class AthleteTracker {
 //
