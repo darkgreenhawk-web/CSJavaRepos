@@ -37,7 +37,16 @@ public class FirstIterofProjectAthleteTracker {
 		//System.out.println(result);
 		return result;
 	}
-
+	public static void printSummary() {
+		System.out.println ("Team and Athlete Analysis"
+		+"\ntrainer enters athlete data until they indicate they are done entering data. The trainer will enter each athlete’s weight and height"
+		+"\neach athlete entered, the BMI value and category will be displayed based on these BMI ranges."
+		+"\n18.5: Underweight"
+		+"\n18.5 to under 25: Normal"
+		+"\n25 to under 30: Overweight"
+		+"\n30 or greater: Obese.");
+	}
+	
 	/**
 	 * 
 	 * @param names
@@ -62,7 +71,7 @@ public class FirstIterofProjectAthleteTracker {
 		return average;
 	}
 	//public static double CalculateMHR 
-	
+	// fix this code for the purpose the last user story
 	public static boolean AskYesNO(Scanner methodInput) {
 		char letter;
 		boolean test = false;
