@@ -3,7 +3,7 @@
  */
 
 /**
- * 
+ * this program is averaging numbers and telling us which numbers are above average
  */
 public class AnalyzeNumbers {
   public static void main(String[] args) {
