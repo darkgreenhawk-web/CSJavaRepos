@@ -22,7 +22,7 @@ public class FirstIterofProjectAthleteTracker {
 		double[] height = {73.0, 56.0, 74.0, 60.0, 80.0};
 		double[] weight = {180.5, 200.7, 215.5, };
 		
-// make best comments
+// make better comments
 		
 	}
 
