@@ -3,10 +3,10 @@
  */
 import java.util.Scanner;
 /**
- * add comment
+ *
  */
 public class AthleteTracker {
-//add comment
+//
 	/**
 	 * @param args
 	 */
