@@ -31,7 +31,7 @@ public class LabL15ArraysIntro {
 		
 		displayAboveAverage(studentNames, studentGrades, average);
 	}
-	private static double calculateAverage(double[] grades) {
+	public static double calculateAverage(double[] grades) {
 		// TODO Auto-generated method stub
 		double sum = 0;
 		for (int i = 0; i < grades.length; i++) {
@@ -40,6 +40,12 @@ public class LabL15ArraysIntro {
 		double average = sum / grades.length;
 		return average;
 	}
+	/**
+	 * fill arrays with names and grades
+	 * @param names
+	 * @param grades
+	 * @param methodInput
+	 */
 	public static void fillStudentData(String[] names, double[] grades, Scanner methodInput) {
 		for (int i = 0; i < names.length; i++) {
 			System.out.print("Enter first name of student " + (i + 1));
@@ -58,4 +64,5 @@ public class LabL15ArraysIntro {
 		}
 	}
 
+	
 }
