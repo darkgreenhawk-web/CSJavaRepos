@@ -23,7 +23,7 @@ public class FirstIterofProjectAthleteTracker {
 		double[] weight = {180.5, 200.7, 215.5, };
 		
 // make better comments
-//new change made made a new change
+//new change made made a new change asd
 	}
 
 	
