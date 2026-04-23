@@ -76,18 +76,16 @@ class SimpleCircleA
 	}
 
 
-	public class Rectangle {
-		private double width;
-		private double height;
-
-		// Constructor: The "method" that creates the object
-		public Rectangle(double width, double height) {
-			this.width = width;
-			this.height = height;
-		}
-
+class Rectangle {
+	private double width;
+	private double height;
+	// Constructor: The "method" that creates the object
+	public Rectangle(double width, double height) {
+		this.width = width;
+		this.height = height;
+	}
 		// A method to display the rectangle's data
-		public void display() {
+	public void display() {
 			System.out.println("Rectangle: " + width + " x " + height);
 		}
 		

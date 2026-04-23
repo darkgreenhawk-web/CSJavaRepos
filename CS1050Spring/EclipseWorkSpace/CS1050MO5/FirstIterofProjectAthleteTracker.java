@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 /**
- * Athlete Tracker Project
+ * Name: Andrew, Rusch
+ * Class CS1030 T/TH
+ * 
+ * Athlete Tracker Project iteration 1
  * This program tracks and analyzes team fitness metrics including BMI, 
  * Max Heart Rate, and specific training zones.
  */
@@ -20,8 +23,8 @@ public class FirstIterofProjectAthleteTracker {
         //three parallel strings that should hold be the same length so we can keep track of each athlete by their index.
         String[] names = new String[numAthletes];
         double[] bmis = new double[numAthletes];
-        double[] mhrs = new double[numAthletes];//probably could be a int but the percent calculation can output a double
-        
+        double[] mhrs = new double[numAthletes];
+        //probably could be a int but the percent calculation can output a double
         // users stories 3 - 5 data collection
         fillAthletesData(numAthletes, names, bmis, mhrs, input);
        
@@ -109,8 +112,8 @@ public class FirstIterofProjectAthleteTracker {
         String belowNormal = "";
 
         for (int i = 0; i < bmis.length; i++) {
-            // calls category method to be filtered by the if statements below
-        	//using the category method allows us to change the definions there instead of hard coding it here
+            //calls category method to be filtered by the if statements below
+        	//using the category method allows us to change the categories here instead of hard coding it here
             String category = getBMICategory(bmis[i]);
 
             // SORTING based on the return value of category method
