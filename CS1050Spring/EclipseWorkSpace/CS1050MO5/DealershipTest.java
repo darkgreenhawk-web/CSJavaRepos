@@ -57,10 +57,14 @@ class Dealership{
 	        return maxIndex;
 	    }	
 	}
-	void displayCars() {
-		
+	void displayCars(Car[] carArray) {
+		for (int i = 0; i < currentNumberOfCars; i++ ) {
+			carArray[i].display();
+		}
 	}
-	void displayCarDetails() {
+		
+	
+	void displayCarDetails(Car[] carArray) {
 		for (int i = 0; i < currentNumberOfCars; i++) {
 			
 		}
@@ -92,6 +96,7 @@ class Car {
 	public void display() {
 		System.out.println("Car:" + make + " " + model + " " + price);
 		
+	}
 	}
 }
 
