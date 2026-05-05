@@ -1,0 +1,33 @@
+Team: Nuggets
+Total Athletes: 6
+
+Deb
+BMI: 42.9
+Category: High
+MHR: 161
+
+Monty
+BMI: 17.5
+Category: Underweight
+MHR: 200
+
+Bintu
+BMI: 30.1
+Category: High
+MHR: 185
+
+Muffin
+BMI: 21.7
+Category: Normal
+MHR: 195
+
+Sparky
+BMI: 45.6
+Category: High
+MHR: 180
+
+Jokic
+BMI: 29.0
+Category: High
+MHR: 191
+
