@@ -133,7 +133,9 @@ class Athlete{
      * @param height Height in inches.
      * @param age Age in years.
      */
-	public Athlete(String name, double weight, double height, int age) {
+
+	
+	Athlete(String name, double weight, double height, int age) {
 		this.name = name;
 		this.weight = weight;
 		this.height = height;
