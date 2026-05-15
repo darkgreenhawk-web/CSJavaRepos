@@ -1,9 +1,9 @@
 /**
- * 
+ *
  */
 
 /**
- * 
+ *
  */
 public class Dealership {
 
@@ -15,12 +15,12 @@ public class Dealership {
 
 	}
 
-}public static void main(String[] args)
-{
+}
+
+public static void main(String[] args) {
 	displayProgramSummary();
 	String fileName = "cars1.txt";
-	try
-	{
+	try {
 		System.out.println("\nTesting file: " + fileName);
 		Dealership dealership = new Dealership("CS Dealership", 6);
 		dealershipSetUp(fileName, dealership);
@@ -29,18 +29,16 @@ public class Dealership {
 		dealership.displayMostExpensiveCar();
 		String outputFileName = dealership.getDealershipName() + ".txt";
 		dealership.writeCarsToFile(outputFileName);
-	} catch (FileNotFoundException exception)
-	{
+	} catch (FileNotFoundException exception) {
 		System.out.println("Error: Unable to find file " + fileName);
 	}
 	System.out.println("\nEnd of program");
 }
-public static void dealershipSetUp(String fileName, Dealership newDealership) throws FileNotFoundException
-{
+
+public static void dealershipSetUp(String fileName, Dealership newDealership) throws FileNotFoundException {
 	File inputFile = new File(fileName);
 	Scanner fileScanner = new Scanner(inputFile);
-	while (fileScanner.hasNext())
-	{
+	while (fileScanner.hasNext()) {
 		String make = fileScanner.next();
 		String model = fileScanner.next();
 		double price = fileScanner.nextDouble();
@@ -49,8 +47,8 @@ public static void dealershipSetUp(String fileName, Dealership newDealership) th
 	}
 	fileScanner.close();
 }
-public static void displayProgramSummary()
-{
+
+public static void displayProgramSummary() {
 	System.out.println("**************************************");
 	System.out.println("Dealership and Car Analysis");
 	System.out.println("**************************************");
@@ -59,5 +57,3 @@ public static void displayProgramSummary()
 	System.out.println("Finds most expensive car");
 	System.out.println();
 }
-
-
